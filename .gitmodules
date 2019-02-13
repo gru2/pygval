@@ -1,0 +1,3 @@
+[submodule "ext/GVal"]
+	path = ext/GVal
+	url = https://github.com/gru2/GVal

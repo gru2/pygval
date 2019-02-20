@@ -16,3 +16,8 @@ include_directories(. ${WORK_DIR}/Usutf ${WORK_DIR}/GVal ${PYTHON_INCLUDE_DIRS} 
 
 add_library(pygval SHARED pygval.cpp)
 target_link_libraries(pygval debug GVald optimized GVal debug Usutfd optimized Usutf)
+set_target_properties(
+    pygval
+    PROPERTIES
+        PREFIX ""
+)

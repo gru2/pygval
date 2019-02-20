@@ -56,8 +56,9 @@ setuptools.setup(
     author_email='radovan.obradovic@gmail.com',
     description='GVal Python bindings',
     long_description='',
-    packages=setuptools.find_packages('src'),
-    package_dir={'':'src'},
+    #packages=setuptools.find_packages('src')
+    packages=['pygval'],
+    #package_dir={'':'src'},
     ext_modules=[CMakeExtension('pygval/pygval')],
     cmdclass=dict(build_ext=CMakeBuild),
     test_suite='tests',
